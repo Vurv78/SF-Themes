@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!-- Theme heavily inspired by VSCode Dark+ -->
+<!-- May not *exactly* match it, but tries to -->
+<!-- Originally created for Syper -->
+<!-- https://github.com/Vurv78/syper/blob/extras/lua/syper/style/vscode_dark_plus.lua -->
+
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>VSCode Dark+</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<!-- UI Background -->
+				<key>background</key>
+				<string>#1e1e1e</string>
+				<!-- Selected line. -->
+				<key>lineHighlight</key>
+				<string>#2e2e2e</string>
+				<!-- Highlight -->
+				<key>selection</key>
+				<string>#49483e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<!-- Single line and Multiline comments -->
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment.line</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#6a9955</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<!-- String. Includes escapes -->
+			<string>String</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#ce9178</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Number Literal -->
+			<key>name</key>
+			<string>Number</string>
+			<key>scope</key>
+			<string>constant.numeric</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b5cea8</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Directive -->
+			<!-- Hopefully will get this renamed to 'Directive' -->
+			<key>name</key>
+			<string>Built-in constant</string>
+			<key>scope</key>
+			<string>constant.language</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e6db74</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- A variable. SF Doesn't support these for some reason. -->
+			<!-- aka Identifier -->
+			<key>name</key>
+			<string>Variable</string>
+			<key>scope</key>
+			<string>variable</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#0053FF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<!-- 'while', 'if', 'then'-->
+			<string>Keyword</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#c586c0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- 'function', 'local' -->
+			<!-- Keyword Modifier -->
+			<key>name</key>
+			<string>Storage type</string>
+			<key>scope</key>
+			<string>storage</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c586c0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- '_G', 'nil', 'true', 'false' -->
+			<!-- VS_Control_Light -->
+			<!-- Not supported by SF for now. -->
+			<key>name</key>
+			<string>Keyword Constant</string>
+			<key>scope</key>
+			<string>constant.language</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9cdcfe</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- ~= + - * -->
+			<key>name</key>
+			<string>Operators</string>
+			<key>scope</key>
+			<string>keyword.operator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#d4d4d4</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Library. Like 'hook' -->
+			<key>name</key>
+			<string>Class name</string>
+			<key>scope</key>
+			<string>support.type, support.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dcdcaa</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Says library function, but also includes function declarations -->
+			<!-- like 'print' or 'hello' in function hello() -->
+			<key>name</key>
+			<string>Library function</string>
+			<key>scope</key>
+			<string>support.variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dcdcaa</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Error / Bad Syntax -->
+			<!-- SF Does not support this yet. -->
+			<key>name</key>
+			<string>Invalid</string>
+			<key>scope</key>
+			<string>invalid</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#990000</string>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
