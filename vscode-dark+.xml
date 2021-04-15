@@ -24,6 +24,14 @@
 				<!-- Highlight -->
 				<key>selection</key>
 				<string>#49483e</string>
+				<!-- Caret -->
+				<key>caret</key>
+				<string>#f8f8f2</string>
+
+				<!-- 'Invalid' -->
+				<!-- This catches things from commas to variable names. -->
+				<key>foreground</key>
+				<string>#e6e6e6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -67,8 +75,8 @@
 			</dict>
 		</dict>
 		<dict>
-			<!-- Directive -->
-			<!-- Hopefully will get this renamed to 'Directive' -->
+			<!-- Constants -->
+			<!-- MAT.<ANTLION>, true, nil, _G -->
 			<key>name</key>
 			<string>Built-in constant</string>
 			<key>scope</key>
@@ -76,7 +84,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#e6db74</string>
+				<string>#569cd6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -91,7 +99,7 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#0053FF</string>
+				<string>#9cdcfe</string>
 			</dict>
 		</dict>
 		<dict>
