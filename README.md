@@ -10,7 +10,13 @@ A lot of keys are specific and taken out for SF so I added comments as to what s
 Note that the editor is missing support for a lot of things (Most notably constants "\_G, nil, true, false" and variables/identifiers.  
 _This makes these themes not completely faithful to what you might see in your own editors._
 
-Current List  
+## Current List  
 * VSCode Dark+
+* Garrysmod Wiki
+* Expression2
+
+## Images
 
 ![VSCode_Dark+](images/vscode_dark+.png)
+![Garrysmod Wiki](images/garrysmod_wiki.png)
+![Expression2](images/expression2.png)

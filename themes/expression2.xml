@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<!-- Expression2 Theme -->
+<!-- May not *exactly* match it, but tries to -->
+<!-- Copied from https://github.com/wiremod/wire/blob/410ab96ed35e0713c380d1bf720ee655d9b4aeba/lua/wire/client/text_editor/wire_expression2_editor.lua#L89 -->
+
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Expression2</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<!-- UI Background -->
+				<key>background</key>
+				<string>#1e1e1e</string>
+				<!-- Selected line. -->
+				<key>lineHighlight</key>
+				<string>#2e2e2e</string>
+				<!-- Highlight -->
+				<key>selection</key>
+				<string>#000564</string>
+				<!-- Caret -->
+				<key>caret</key>
+				<string>#f8f8f2</string>
+
+				<!-- 'Invalid' -->
+				<!-- This catches things from commas to variable names. -->
+				<key>foreground</key>
+				<string>#e6e6e6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<!-- Single line and Multiline comments -->
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment.line</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#808080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<!-- String. Includes escapes -->
+			<string>String</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#808080</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Number Literal -->
+			<key>name</key>
+			<string>Number</string>
+			<key>scope</key>
+			<string>constant.numeric</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#f0a0a0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Constants -->
+			<!-- directive? -->
+			<key>name</key>
+			<string>Built-in constant</string>
+			<key>scope</key>
+			<string>constant.language</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#f0a0f0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- A variable. SF Doesn't support these for some reason. -->
+			<!-- aka Identifier -->
+			<key>name</key>
+			<string>Variable</string>
+			<key>scope</key>
+			<string>variable</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#a0f0a0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<!-- 'while', 'if', 'then'-->
+			<string>Keyword</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#a0f0f0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- 'function', 'local' -->
+			<!-- Keyword Modifier -->
+			<key>name</key>
+			<string>Storage type</string>
+			<key>scope</key>
+			<string>storage</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a0f0f0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- '_G', 'nil', 'true', 'false' -->
+			<!-- VS_Control_Light -->
+			<!-- Not supported by SF for now. -->
+			<key>name</key>
+			<string>Keyword Constant</string>
+			<key>scope</key>
+			<string>constant.language</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#f0a0f0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- ~= + - * -->
+			<key>name</key>
+			<string>Operators</string>
+			<key>scope</key>
+			<string>keyword.operator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e0e0e0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Library. Like 'hook' -->
+			<key>name</key>
+			<string>Class name</string>
+			<key>scope</key>
+			<string>support.type, support.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a0a0f0</string>
+			</dict>
+		</dict>
+		<dict>
+			<!-- Says library function, but also includes function declarations -->
+			<!-- like 'print' or 'hello' in function hello() -->
+			<key>name</key>
+			<string>Library function</string>
+			<key>scope</key>
+			<string>support.variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a0a0f0</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
